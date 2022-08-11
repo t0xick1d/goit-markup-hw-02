@@ -14,6 +14,9 @@ body{
 h1,h2,h3,h4{
   color: var(--primary-text-color);
 }
+li{
+  list-style: none;
+}
 a {
   color: var(--text-silver-color);
   text-decoration: none;
@@ -29,10 +32,10 @@ a {
 .accentlogo{
   color: var(--accent-color);
 }
-.logo:hover,
+/* .logo:hover,
 .accentlogo:hover{
   color: var(--accent-color);
-}
+} */
 .blocknav a {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -59,9 +62,6 @@ a:focus {
 /* Firts section title */
 .mainsection{
   background-color: var(--primary-bg-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -75,6 +75,9 @@ a:focus {
   letter-spacing: 0.06em;
 }
 .maintitle{
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
   color: var(--primary-white-color);
 }
 .button{
@@ -136,13 +139,9 @@ a:focus {
   font-size: 26px;
   line-height: 1.19;
 }
-.logofooter:hover,
-.logofooter:focus{
-  color: var(--accent-color);
-}
+
 .address,
 .emailnumber{
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -152,12 +151,20 @@ a:focus {
   color: var(--primary-white-color);
 }
 
+.address:hover,
+.address:focus,
+.emailnumber:hover,
+.emailnumber:focus{
+  color: var(--accent-color);
+}
+
 /* Page Portfolio */
 .maintitleportfolio{
   display: none;
 }
 
 .filterbutton button{
+  font-family: inherit;
   color: var(--primary-text-color);
   background: var(--bg-color-button);
   cursor: pointer;
